@@ -23,15 +23,15 @@ function nowServing(deliLine){
 
 function currentLine(katzDeliLine){
   
-  let linePosition = katzDeliLine.length
+  let lineLength = katzDeliLine.length
   
-  if (linePosition===0){
+  if (lineLength===0){
     return "The line is currently empty."
   }
   
   let announcements = []
   
-  for(let i=0; i<linePosition; i++){
+  for(let i=0; i<lineLength; i++){
    
     announcements.push( (i+1) + ". " + katzDeliLine[i])
    
